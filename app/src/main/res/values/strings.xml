@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">amazingtalker-android-ken</string>
+    <string name="morning">早上</string>
+    <string name="evening">晚上</string>
+    <string name="night">夜晚</string>
+    <string name="your_local_time_zone">您的本地時區: %s</string>
+    <string name="next_week">下週</string>
+    <string name="previous_week">上週</string>
+</resources>

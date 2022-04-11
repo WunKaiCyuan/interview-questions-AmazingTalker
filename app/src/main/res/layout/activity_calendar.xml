@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ScheduleActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="132dp"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|enterAlways|snap">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/ibPreviousWeek"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:background="@null"
+                        android:contentDescription="@string/previous_week"
+                        android:padding="12dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/arrow_selecrot" />
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/dark_grey_color"
+                        android:textSize="18sp"
+                        tools:text="2022-04-02 - 04-08" />
+
+                    <ImageButton
+                        android:id="@+id/ibNextWeek"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:background="@null"
+                        android:contentDescription="@string/next_week"
+                        android:padding="12dp"
+                        android:rotation="180"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/arrow_selecrot" />
+                </LinearLayout>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tlDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    app:tabIndicatorColor="@color/primary_dark_grey_color"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/primary_dark_grey_color"
+                    app:tabTextColor="@color/black" />
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vpSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTime"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="24dp"
+        android:textSize="14sp"
+        tools:background="@drawable/schedule_time_btn_booked_selector"
+        tools:text="17:30"
+        tools:textColor="@color/dark_color" />
+</FrameLayout>

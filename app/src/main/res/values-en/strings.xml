@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="morning">MORNING</string>
+    <string name="evening">EVENING</string>
+    <string name="night">NIGHT</string>
+    <string name="your_local_time_zone">Your local time zone: %s</string>
+    <string name="next_week">next week</string>
+    <string name="previous_week">previous week</string>
+</resources>
